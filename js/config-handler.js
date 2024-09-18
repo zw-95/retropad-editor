@@ -30,7 +30,7 @@ function ConfigHandler() {
 		if (index == -1 || _isOverlayXX_descYY(_strings[index]))
 			_currentLine = index;
 		else
-			throw new Error('Wrong config line number');
+			throw new Error('无效的行号');
 	}
 
 
@@ -45,7 +45,7 @@ function ConfigHandler() {
 
 	this.setCurrentLineSectionValue = function (section, value) {
 		if (_currentLine == -1) {
-			throw new Error('no selection!');
+			throw new Error('未选中!');
 		}
 
 		_strings[_currentLine] = _editParamSection(_strings[_currentLine], section, value);
@@ -890,7 +890,7 @@ function ConfigHandler() {
 		}
 
 		if (missingImages.length > 0) {
-			alert('Images are requiered for loading gamepad config:\n\n' + missingImages.join("\n") + '\n\nImport these files and click "Reset".')
+			alert('加载游戏键盘配置时，图像文件是必须的:\n\n' + missingImages.join("\n") + '\n\n导入这些文件并点击 "重置".')
 		}
 
 		if (toLoad == 0) {

@@ -1064,7 +1064,7 @@ function getButtonDataFromDialog() {
 	d.command = document.getElementById('command-name').value.trim() || 'null';
 	if (d.command.search(/\s/) != -1) {
 		d.warn = true;
-		alert('Button command should not contain spaces');
+		alert('按钮命令不能包括空格！');
 	}
 
 	d.shape = ['rect', 'radial'][document.getElementById('button-shape').selectedIndex];
@@ -1154,7 +1154,7 @@ function delCurrentButton() {
 	showDialog('button-delete-dialog', false);
 
 	if (!conf.deleteCurrentButton())
-		alert('No selection!');
+		alert('未选中!');
 	redrawPad();
 }
 

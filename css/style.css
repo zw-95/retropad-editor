@@ -52,7 +52,7 @@ input[type=number] {
 	margin: 0.5vw;
 	padding: 1vw 1.5vw 1vw 1.5vw;
 	overflow: hidden;
-	box-shadow: 0.3vw 0.3vw 0.3vw #bbb;
+	box-shadow: 0.1vw 0.1vw 0 0 #bbb;
 }
 
 #header__caption {
@@ -86,7 +86,7 @@ input[type=number] {
 	margin: 0.5vw;
 	padding-top: 0.5vw;
 	padding-bottom: 1px;
-	box-shadow: 0.3vw 0.3vw 0.3vw #bbb;
+	box-shadow: 0.1vw 0.1vw 0 0 #bbb;
 }
 
 .toolbar-group {
@@ -142,6 +142,7 @@ input[type=number] {
 
 .group-header {
 	display: inline-block;
+	font-weight: bold;
 	min-width: 9vw;
 	color: #06b;
 }
@@ -155,7 +156,7 @@ input[type=number] {
 	overflow-x: hidden;
 	background-color: white;
 	border-radius: 4px;
-	box-shadow: 0.3vw 0.3vw 0.3vw #bbb;
+	box-shadow: 0.1vw 0.1vw 0 0 #bbb;
 	margin: 0.5vw;
 }
 
@@ -489,7 +490,7 @@ input[type=number] {
 	border-radius: 4px;
 	background-color: white;
 	margin: 0.5vw;
-	box-shadow: 0.3vw 0.3vw 0.3vw #bbb;
+	box-shadow: 0.1vw 0.1vw 0 0 #bbb;
 }
 
 #footer a {
